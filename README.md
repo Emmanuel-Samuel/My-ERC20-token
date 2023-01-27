@@ -31,27 +31,44 @@
 
 
 ## Setup
--To run this project, it is required to have installed node.js
--Open the directory
+To run this project, it is required to have installed node.js
+
+Open the directory
+
 `cd hardhat-erc20`
--Initialise it using
+
+Initialise it using
+
 `npm init --yes`
--Install hardhat
+
+Install hardhat
+
 `npm install --save-dev hardhat`
--Check if hardhat installed correctly
+
+Check if hardhat installed correctly
+
 `npx hardhat`
 
 
 ## Usage
--Compile contract first
+Compile contract first
+
 `npx hardhat compile`
--Run the test
+
+Run the test
+
 `npx hardhat test`
--To deploy to mainnet, follow the hints and update the .env file
--Update the hardhat.config.ts with the network config in the .env file
--Deploy using this
+
+To deploy to mainnet, follow the hints and update the .env file
+
+Update the hardhat.config.ts with the network config in the .env file
+
+Deploy using this
+
 `npx hardhat run scripts/deploy.ts --network replace_network_here`
--To deploy to remix
+
+To deploy to remix
+
 `npx hardhat flatten contracts/ERC20.sol >> FlattenedERC20.sol`
 
 
